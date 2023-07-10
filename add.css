@@ -119,3 +119,45 @@ body {
 .movie__average--red {
   border: 4px solid red;
 }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media (max-width: 450px) {
+  .container {
+    max-width: 450px;
+  }
+
+  .movie {
+    width: 180px;
+    margin: 7px 0px;
+  }
+
+  .movie__cover-inner {
+    height: 280px;
+  }
+
+  .movie__average {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .movie__title {
+    font-size: 14px;
+  }
+
+  .movie__category {
+    font-size: 13px;
+  }
+
+  .movie__average--green {
+    border: 2px solid green;
+  }
+
+  .movie__average--orange {
+    border: 2px solid orange;
+  }
+
+  .movie__average--red {
+    border: 2px solid red;
+  }
+}
